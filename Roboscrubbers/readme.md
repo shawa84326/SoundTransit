@@ -79,13 +79,6 @@ If you face any issues while executing the script, follow these steps:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-This project is part of the Sound Transit initiative and aims to improve cleaning efficiency in public transportation facilities, specifically in elevators across multi-floor buildings.
+This project is part of the Capstone project sponsored by Sound Transit initiative, made at GIX, university of washington and aims to improve cleaning efficiency in public transportation facilities, specifically in elevators across multi-floor buildings.
 ```
 
-### Key Additions:
-1. Added detailed troubleshooting steps in markdown format.
-2. Included commands for verifying ROS installation and environment setup.
-3. Added a debugging command (`bash -x`) to help identify script issues.
-4. Ensured consistent formatting and readability.
-
-You can now copy and paste this into your `README.md` file. Let me know if you need further assistance!
