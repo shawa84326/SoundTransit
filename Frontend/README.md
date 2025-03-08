@@ -1,6 +1,4 @@
-Here’s a basic `README.md` to guide anyone through setting up and running the provided code:
 
----
 
 # ROS Web Interface
 
