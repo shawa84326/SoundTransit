@@ -10,7 +10,7 @@ The **Elevator Cleaning Robot** is designed to be a mobile robot capable of:
 
 - 
 - **Task Execution**: Performing cleaning tasks such as scrubbing floors and suctioning dirt.
-- **Elevator Interaction**: Entering and exiting elevators autonomously, ensuring that the cleaning process is continuous across multiple floors.
+- **Elevator Interaction**: Entering and exiting elevators through teleop, ensuring that the cleaning process is robust and faster.
 
 ## Hardware Requirements
 
