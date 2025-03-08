@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Here’s a basic `README.md` to guide anyone through setting up and running the provided code:
+
+---
+
+# ROS Web Interface
+
+This project connects to a ROS (Robot Operating System) network via WebSockets and allows users to control robots remotely. The web interface provides a live feed from a camera and buttons for controlling the robot.
+
+## Prerequisites
+
+Before running the project, make sure you have the following installed:
+
+1. **Node.js**: This project requires Node.js for running the React application.
+   - [Download Node.js](https://nodejs.org/)
+
+2. **ROS (Robot Operating System)**: You need to have ROS set up and running, and the `rosbridge_websocket` package installed to enable communication between the web interface and the robot.
+   - [ROS Installation Guide](http://wiki.ros.org/ROS/Installation)
+   - Install `rosbridge_websocket`:
+     ```bash
+     sudo apt-get install ros-noetic-rosbridge-server
+     ```
+
+3. **Web Video Server**: The live feed is fetched via a stream from the `web_video_server` in ROS. Set it up and stream images from your camera device.
+   - [Web Video Server Setup](http://wiki.ros.org/web_video_server)
 
 ## Getting Started
 
-First, run the development server:
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yourusername/ros-web-interface.git
+   cd ros-web-interface
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+2. **Install dependencies**:
+   Run the following command to install the required npm packages:
+   ```bash
+   npm install
+   ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Configure ROS Connection**:
+   Open the `src` folder in your project and edit the WebSocket URL inside `src/Page.js` to match your ROSBridge WebSocket connection.
+   
+   ```js
+   const rosInstance = new ROSLIB.Ros({
+     url: 'ws://<YOUR_ROS_IP>:9090',  // Replace with your ROSBridge server IP
+   });
+   ```
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+4. **Run the application**:
+   Start the development server:
+   ```bash
+   npm start
+   ```
+   This will start the React app, and it will automatically open in your browser at `http://localhost:3000`.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Usage
 
-## Learn More
+Once the app is running, you'll see:
 
-To learn more about Next.js, take a look at the following resources:
+- A live feed from your camera at the top of the page.
+- Control buttons for sending commands to the robot below the camera feed.
+- A table to monitor waste types, status, and robot location.
+- Buttons to control specific robot tasks like "Suction", "Scrubber", and "To Dock".
+- Progress bars will pop up when performing tasks, showing completion status.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Notes
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- The camera feed URL (`IMAGE_URL`) is fetched from a ROS web video server. Ensure your ROS environment is correctly set up for streaming.
+- WebSocket server (`ws://<YOUR_ROS_IP>:9090`) must be running for communication between the web interface and ROS.
 
-## Deploy on Vercel
+## Troubleshooting
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- If the live feed is not displaying, ensure that the Web Video Server in ROS is running and streaming from the correct topic (`/output_image`).
+- If you encounter issues with the ROS connection, ensure that the IP address of the ROSBridge WebSocket server is correct and that the server is accessible.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+You can update the repository link and any project-specific configurations as needed.
