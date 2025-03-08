@@ -2,7 +2,7 @@
 
 # Elevator Cleaning Robot
 
-This project focuses on developing an autonomous robot that can clean elevators. The robot interacts with elevators, navigates through multi-floor buildings, and performs cleaning tasks like suction and scrubbing. It uses a combination of autonomous navigation, sensors, and AI-powered controls to ensure efficient and reliable operation.
+This project focuses on developing an autonomous robot that can clean elevators. The robot interacts with elevator floors, navigates through obstacles through teleoperation, and performs cleaning tasks like suction and scrubbing. It uses a combination of autonomous navigation, sensors, and AI-powered controls to ensure efficient and reliable operation. It depicts the user-journey for removing bio-waste from the elevator
 
 ## Project Overview
 
