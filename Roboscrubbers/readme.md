@@ -1,6 +1,4 @@
-Here’s the updated `README.md` markdown code with **No. 2, 3, 4, and Troubleshooting** properly formatted in markdown:
 
-```markdown
 # Elevator Cleaning Robot Project
 
 ## Overview
