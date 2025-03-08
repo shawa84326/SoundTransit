@@ -34,7 +34,7 @@ chmod +x connect_to_client.sh
 ```
 
 ### 4. Execute the Command
-After providing the correct permissions, execute the following command to connect the elevator cleaning robot to the client:
+After providing the correct permissions, execute the following command on JETSON/RASPERRY PI to connect the elevator cleaning robot to the client (Laptop):
 
 ```bash
 ./connect_to_client.sh
