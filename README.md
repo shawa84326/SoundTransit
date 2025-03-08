@@ -16,7 +16,7 @@ The **Elevator Cleaning Robot** is designed to be a mobile robot capable of:
 
 The robot utilizes:
 
-- **Jetson Nano / Raspberry Pi**: For processing and controlling the robot's tasks and navigation.
+- **Jetson Orion AGX / Raspberry Pi**: For processing and controlling the robot's tasks and navigation.
 - **Cameras**: For object recognition and pathfinding.
 - **Motors and Wheels**: For mobility and precise control.
 - **Cleaning Mechanisms**: Suction and scrubbing tools integrated on the robot.
