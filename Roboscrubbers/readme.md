@@ -80,5 +80,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Acknowledgments
 This project is part of the Capstone project sponsored by Sound Transit initiative, made at GIX, university of washington and aims to improve cleaning efficiency in public transportation facilities, specifically in elevators across multi-floor buildings.
-```
-
