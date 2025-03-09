@@ -23,19 +23,14 @@ Before running the project, make sure you have the following installed:
 
 ## Getting Started
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/yourusername/ros-web-interface.git
-   cd ros-web-interface
-   ```
 
-2. **Install dependencies**:
+1. **Install dependencies**:
    Run the following command to install the required npm packages:
    ```bash
    npm install
    ```
 
-3. **Configure ROS Connection**:
+2. **Configure ROS Connection**:
    Open the `src` folder in your project and edit the WebSocket URL inside `src/Page.js` to match your ROSBridge WebSocket connection.
    
    ```js
@@ -44,10 +39,10 @@ Before running the project, make sure you have the following installed:
    });
    ```
 
-4. **Run the application**:
+3. **Run the application**:
    Start the development server:
    ```bash
-   npm start
+   npm run dev
    ```
    This will start the React app, and it will automatically open in your browser at `http://localhost:3000`.
 
