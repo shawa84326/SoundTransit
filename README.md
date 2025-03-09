@@ -92,7 +92,7 @@ roslaunch rosbridge_server rosbridge_websocket.launch
 On your laptop, run the following command to start the server that will communicate with the Jetson/Raspberry Pi (client):
 
 ```bash
-.\connect_to_host
+.\connect_to_host.sh
 ```
 
 #### On Jetson/Raspberry Pi (Client):
@@ -100,7 +100,7 @@ On your laptop, run the following command to start the server that will communic
 On your Jetson or Raspberry Pi, run the following command to connect to the server and start receiving commands:
 
 ```bash
-.\connect_to_client
+.\connect_to_client.sh
 ```
 
 This will establish communication between the laptop (host) and the Jetson/Raspberry Pi (client), allowing you to send control commands to the robot.
