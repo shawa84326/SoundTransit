@@ -8,7 +8,7 @@ This project focuses on developing an autonomous robot that can clean elevators.
 
 The **Elevator Cleaning Robot** is designed to be a mobile robot capable of:
 
-- **Task Execution**: Performing cleaning tasks such as scrubbing floors and suctioning dirt.
+- **Task Execution**: Performing cleaning tasks such as scrubbing floors and suctioning dirt(Not in this phase).
 - **Elevator Interaction**: Entering and exiting elevators through teleop, ensuring that the cleaning process is robust and faster.
 
 ## Hardware Requirements
